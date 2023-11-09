@@ -1,6 +1,6 @@
 [package]
 name = "ts-rs-json-value"
-version = "7.0.2"
+version = "7.0.3"
 authors = ["Moritz Bischof <moritz.bischof1@gmail.com>"]
 edition = "2021"
 license = "MIT"
@@ -33,7 +33,7 @@ chrono = { version = "0.4", features = ["serde"] }
 
 [dependencies]
 heapless = { version = "0.7", optional = true }
-ts-rs-macros = { version = "7.0.0", path = "../macros" }
+ts-rs-macros = { version = "7.0.1", package = "ts-rs-macros-serde-json", path = "../macros" }
 dprint-plugin-typescript = { version = "0.85.1", optional = true }
 chrono = { version = "0.4", optional = true }
 bigdecimal = { version = ">=0.0.13, < 0.4.0", features = ["serde"], optional = true }
