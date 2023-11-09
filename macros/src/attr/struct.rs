@@ -67,7 +67,8 @@ impl_parse! {
         "rename" => out.rename = Some(parse_assign_str(input)?),
         "rename_all" => out.rename_all = Some(parse_assign_str(input).and_then(Inflection::try_from)?),
         "export" => out.export = true,
-        "export_to" => out.export_to = Some(parse_assign_str(input)?)
+        "export_to" => out.export_to = Some(parse_assign_str(input)?),
+        "tag" => out.tag = Some(parse_assign_str(input)?)
     }
 }
 
